@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'font1';
+    src: url(fontes/font\ 1.TTF);
+}
+@font-face {
+    font-family: 'font2';
+    src: url(fontes/font\ 2.otf);
+}
+@font-face {
+    font-family: 'font3';
+    src: url(fontes/LinkStart.otf);
+}
+@font-face {
+    font-family: 'font4';
+    src: url(fontes/Crang.ttf);
+}
+body{
+    background-color: rgb(255, 77, 240);
+}
+.cabeçalho a{
+  color: white;
+  text-decoration: none;
+}
+.cabeçalho {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    background-color: purple;
+    font-size: 20px;
+    padding: 3px;
+    font-family: 'font3';
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: 1000;;
+}
+.cabeçalho h3{
+    font-family: 'font3';
+    display: inline-block;
+    text-align: center;
+    margin: 60px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+} 
+.História{
+    text-align: center;
+    font-family: 'font4';
+    margin-top: 90px;
+    font-size: 50px;
+    margin-bottom: 0%;
+    color: white;
+  }
+.timeline {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    margin: 20px 0;
+    overflow-x: auto; 
+  }
+
+ 
+  .timeline::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: #000000;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .timeline-event {
+    position: relative;
+    flex: 1;
+    padding: 20px;
+    width: 200px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
+  .timeline-event::before {
+    content: ' ';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #1a041e;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+
+  .timeline-event::before {
+    left: 48%;
+    top: 60px;
+  }
+
+ 
+  .content {
+    color: #ffffff;
+    padding: 15px;
+    background-color: rgb(74, 0, 74);
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+  }
+.content h2{
+   font-family: 'font2'; 
+ }
+.content h3{
+    font-family: 'font2'; 
+  }
+.quemsomos{
+  border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    font-family: 'font4';
+}
+.fotos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.foto1 {
+  width: 300px; 
+  height: auto;
+  margin: 5px;
+  border-radius: 5px;
+}
+.foto2 {
+  margin: 5px;
+  width: 300px; 
+  height: auto;
+  border-radius: 5px;
+}
+.fotos p{
+  text-align: justify;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+} 
+.eventos {
+  background-color: white;
+}
+.eventos h2{
+  text-align: left;
+  font-family: 'font 3';
+}
+.eventos p{
+  text-align: justify;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fotoseventos {
+  display: flex; 
+  justify-content: center; 
+  gap: 50px;
+  padding: 20px; /
+}
+.fotoseventos img {
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 50%; 
+  border: 2px solid #ccc; 
+  transition: transform 0.3s;
+}
+.fotoseventos img:hover {
+  transform: scale(1.1); 
+}

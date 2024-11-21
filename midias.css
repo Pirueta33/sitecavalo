@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'font1';
+    src: url(fontes/font\ 1.TTF);
+}
+@font-face {
+    font-family: 'font2';
+    src: url(fontes/font\ 2.otf);
+}
+@font-face {
+    font-family: 'font3';
+    src: url(fontes/LinkStart.otf);
+}
+@font-face {
+    font-family: 'font4';
+    src: url(fontes/Crang.ttf);
+}
+.cabeçalho a{
+    color: white;
+    text-decoration: none;
+  }
+.cabeçalho {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    background-color: purple;
+    font-size: 20px;
+    padding: 3px;
+    font-family: 'font3';
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: 1000;;
+}
+.cabeçalho h3{
+
+    font-family: 'font3';
+    display: inline-block;
+    text-align: center;
+    margin: 60px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+} 
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh; 
+  }
+
+  .image-container {
+    flex: 1; 
+    max-width: 50%;
+    overflow: hidden; 
+  }
+  
+  .image-container img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .texto {
+    background-color: rgb(44, 0, 114);
+    flex: 1; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;  
+  }
+  .texto p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+  }
+  .texto h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'font1';
+  }
